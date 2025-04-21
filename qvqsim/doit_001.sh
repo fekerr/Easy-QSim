@@ -36,3 +36,4 @@ python qvqsim.py path/to/input_file > "$log_file" 2>&1
 
 # Optionally, echo the name of the log file for reference:
 echo "Output logged to $log_file"
+touch doit.stamp
