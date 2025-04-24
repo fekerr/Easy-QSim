@@ -1,0 +1,7 @@
+Loading input from path/to/input_file as qvqsim format (stub)
+Executing quantum simulation (stub)
+Simulation Results:
+{'final_state': array([[0.        +0.j],
+       [0.70710678+0.j],
+       [0.        +0.j],
+       [0.70710678+0.j]]), 'probabilities': [[0.0], [0.4999999999999999], [0.0], [0.4999999999999999]]}

@@ -1,0 +1,33 @@
+project('qvqsim', [],
+  version : '0.1',
+  meson_version : '>=0.55',
+  default_options : ['warning_level=2']
+)
+
+# Ensure that a Python3 interpreter is available.
+python_dep = dependency('python3', required: true)
+
+# Install Python scripts and configuration files.
+install_data(
+  'qvqsim.py',
+  'qv_simulate.py',
+  'input_qvqsim.py',
+  'input_json.py',
+  'input_yaml.py',
+  'output_qvqsim.py',
+  'config.toml'
+)
+
+# Define a custom target that runs the doit.sh script.
+# Note: doit.sh should create its log file with the incremented
+# name and also "touch" a dummy file (doit.stamp) to signal target
+# completion.
+doit_run = custom_target('doit_run',
+  command : ['./doit.sh'],
+  output  : 'doit.stamp',       # dummy output file updated by doit.sh
+  build_by_default : true,
+  capture : true
+)
+
+# Create an alias target "doit" so that running 'ninja doit' invokes doit_run.
+alias_target('doit', doit_run)
