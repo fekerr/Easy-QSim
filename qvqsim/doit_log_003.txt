@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/home/fekerr/src/Easy-QSim/qvqsim/qvqsim.py", line 9, in <module>
+    from qv_simulate import simulate
+  File "/home/fekerr/src/Easy-QSim/qvqsim/qv_simulate.py", line 74
+    print("Executing quantum simulation (stub (CHSH)")")
+                                                      ^
+SyntaxError: unterminated string literal (detected at line 74)
