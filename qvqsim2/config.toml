@@ -1,0 +1,18 @@
+# Default configuration settings for qvqsim
+
+[simulation]
+# Default number of times to run the circuit simulation (shots)
+default_shots = 1024
+
+# Default number of qubits if not specified in the circuit input
+# Note: This might be superseded by the circuit definition itself.
+default_qubits = 2
+
+[backend]
+# Placeholder for potential future backend selection (e.g., 'statevector', 'density_matrix')
+# Currently, only a basic statevector simulation is implied.
+default_backend = "statevector_basic"
+
+[logging]
+# Placeholder for logging level (e.g., DEBUG, INFO, WARNING, ERROR)
+level = "INFO"

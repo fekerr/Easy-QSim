@@ -1,0 +1,11 @@
+qubits: 3
+gates:
+  - gate: H
+    target: 
+  - gate: CNOT
+    control: 
+    target: [1]
+  - gate: CNOT
+    control: 
+    target: [2]
+shots: 2000

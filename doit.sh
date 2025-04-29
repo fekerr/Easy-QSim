@@ -1,4 +1,5 @@
 #!/bin/bash
+# begin file doit.sh
 
 DOITPY="quantum-sim-basic-CHSH.py"
 

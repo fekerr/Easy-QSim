@@ -1,0 +1,8 @@
+{
+  "qubits": 2,
+  "gates": [
+    {"gate": "H", "target": },
+    {"gate": "CNOT", "control": , "target": [1]}
+  ],
+  "shots": 1000
+}

@@ -1,0 +1,9 @@
+{
+  "num_qubits": 2,
+  "shots": 1000,
+  "circuit": [
+    ["H", 0],
+    ["CX", 0, 1],
+    ["Measure", [0, 1]]
+  ]
+}

@@ -1,0 +1,9 @@
+# --- Testing Target ---
+# Defines 'meson test'
+# Uses Python's unittest module discovery feature
+test('unit_tests', py_inst,
+  args : ['-m', 'unittest', 'discover', '-s', meson.current_source_dir(), '-p', 'test_*.py'],
+  depends : qvqsim_sources + qvqsim_tests,
+  # Explicitly set PYTHONPATH using dictionary syntax
+  env : {'PYTHONPATH' : meson.current_source_dir()}
+)
