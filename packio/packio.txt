@@ -1,0 +1,15 @@
+packio/
+├── src/
+│   └── packio/
+│       ├── __init__.py
+│       ├── main.py
+│       ├── file_utils.py
+│       └── git_utils.py
+├── tests/
+│   ├── __init__.py
+│   └── test_packio.py
+├── pyproject.toml
+├── README.md
+└── LICENSE
+
+

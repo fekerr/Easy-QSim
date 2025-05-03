@@ -1,0 +1,31 @@
+# pyproject.toml
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "packio"
+version = "0.1.0"  # Example version
+authors = [
+  { name="Example Author", email="author@example.com" },
+]
+description = "A tool to pack project files into a single context file for LLMs."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT License" } # Or use SPDX identifier: { file = "LICENSE" }
+classifiers =
+dependencies = [
+    # Add dependencies like 'GitPython' if used, e.g., "GitPython>=3.1"
+]
+# Optional: Define entry point for CLI command
+[project.scripts]
+packio = "packio.main:main"
+
+# Optional: Define development dependencies
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-mock",
+    # Add other dev tools like linters (e.g., ruff) or type checkers (e.g., mypy)
+]

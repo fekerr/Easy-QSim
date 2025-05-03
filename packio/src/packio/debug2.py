@@ -1,0 +1,6 @@
+# Inside apply_filters
+logging.debug(f"Initial files: {files}")
+#... include pattern logic...
+logging.debug(f"Files after includes: {filtered_files}")
+#... ignore pattern logic...
+logging.debug(f"Files after ignores: {filtered_files}")
